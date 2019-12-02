@@ -84,10 +84,10 @@ namespace WindowsFormsApp1
             dtpkFromDate.Value = new DateTime(today.Year, today.Month, 1);
             dtpkToDate.Value = dtpkFromDate.Value.AddMonths(1).AddDays(-1);
         }
-        void LoadListBillByDate(DateTime checkIn, DateTime checkOut)
-        {
-            dtgvBill.DataSource = BillDAO.Instance.GetBillListByDate(checkIn, checkOut);
-        }
+        //void LoadListBillByDate(DateTime checkIn, DateTime checkOut)
+        //{
+        //    dtgvBill.DataSource = BillDAO.Instance.GetBillListByDate(checkIn, checkOut);
+        //}
 
         void LoadListBillByDateAndPage(DateTime checkIn, DateTime checkOut, int page)
         {
